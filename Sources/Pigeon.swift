@@ -7,8 +7,8 @@
 import ArgumentParser
 
 @main
-struct Pigeon: ParsableCommand {
-    mutating func run() throws {
+struct Pigeon: AsyncParsableCommand {
+    mutating func run() async throws {
         print("Hello, world!")
     }
 }
